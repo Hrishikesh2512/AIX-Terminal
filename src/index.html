@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIX-Term</title>
+    <!-- We will load xterm.css from node_modules via a relative path if possible, or copy it. 
+         Electron usually allows requiring CSS or we can link it from the renderer process. 
+         For simplicity, we'll try to link it in the renderer or add it to styles.css -->
+    <link rel="stylesheet" href="../node_modules/xterm/css/xterm.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Custom Title Bar (Optional, for frameless) -->
+        <div class="title-bar">
+            <img src="../icon.png" class="app-icon" style="height: 20px; margin-right: 10px; border-radius: 4px;">
+            <div class="logo-container">
+                <span class="logo-aix">AIX</span><span class="logo-term">-TERM</span>
+            </div>
+            <div class="window-controls">
+                <div id="btn-close-window" class="window-control close">✕</div>
+            </div>
+        </div>
+
+        <div id="terminal-container"></div>
+
+        <!-- AI Overlay / Command Palette -->
+        <div id="ai-overlay" class="hidden">
+            <div class="ai-panel glass">
+                <div class="ai-header">
+                    <span class="ai-icon">✨</span>
+                    <span class="ai-title">NEURAL COMMAND CORE</span>
+                </div>
+                <div class="ai-input-wrapper">
+                    <input type="text" id="ai-input" placeholder="Query AI assistant..." autofocus>
+                    <div class="ai-loader hidden"></div>
+                </div>
+                <div id="ai-response" class="hidden">
+                    <div class="response-content"></div>
+                    <div class="response-actions">
+                        <button id="btn-run" class="btn primary">EXECUTE</button>
+                        <button id="btn-copy" class="btn secondary">COPY</button>
+                        <button id="btn-cancel" class="btn ghost">DISCARD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Footer -->
+        <div class="status-bar">
+            <div class="status-item">
+                <span class="status-dot online"></span> LM STUDIO: CONNECTED
+            </div>
+            <div class="status-item" id="active-panels-count">
+                PANELS: 1
+            </div>
+            <div class="status-item right">
+                AIX-TERM PRO v1.2.0
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>

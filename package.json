@@ -1,0 +1,27 @@
+{
+  "name": "aix-term",
+  "version": "1.0.0",
+  "description": "AI-Powered Local Terminal",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "terminal",
+    "ai",
+    "electron",
+    "linux",
+    "llm",
+    "xterm"
+  ],
+  "author": "AIX-Term Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.0.2"
+  },
+  "dependencies": {
+    "node-pty": "^1.0.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0"
+  }
+}
