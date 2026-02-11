@@ -4,7 +4,7 @@
 
 AIX-Term is a local, AI-powered terminal for Linux designed for speed, intelligence, and a premium developer experience. It transforms your raw shell into a context-aware, predictive environment using local LLMs.
 
-![AIX-Term Pro](https://raw.githubusercontent.com/placeholder-logo.png)
+
 
 ## ✨ Features
 
