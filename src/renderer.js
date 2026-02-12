@@ -1,5 +1,5 @@
-const { Terminal } = require('xterm');
-const { FitAddon } = require('xterm-addon-fit');
+// const { Terminal } = require('xterm');
+// const { FitAddon } = require('xterm-addon-fit');
 
 // Since we are in Electron renderer with nodeIntegration: false, 
 // we won't have direct access to 'require' for node modules if we didn't bundle.
