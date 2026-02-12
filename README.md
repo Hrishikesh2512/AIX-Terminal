@@ -24,10 +24,10 @@ AIX-Term is a local, AI-powered terminal for Linux designed for speed, intellige
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/aix-term.git
+git clone https://github.com/yourusername/AIX-Terminal.git
 
 # Enter the directory
-cd aix-term
+cd AIX-Terminal
 
 # Install dependencies
 npm install
